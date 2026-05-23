@@ -5,28 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="theme-color" content="#1A4F8A">
 <title>Fiches Révision — Management S2</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231A4F8A'/><text y='78' x='50' text-anchor='middle' font-size='72' fill='white'>📚</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-  
-
-
 <style>
-  @keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-.ai-line {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 0;
-  font-size: 15px;
-}
-.ai-icon {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  animation: spin 2.5s linear infinite;
-}
 /* ═══════════════ RESET & VARIABLES ═══════════════ */
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 :root{
@@ -65,6 +46,9 @@ body{font-family:var(--fh);background:var(--bg);color:var(--gy);line-height:1.6;
 }
 .hero .sub{font-size:clamp(0.82rem,2.5vw,1rem);opacity:0.78;margin-bottom:22px;font-weight:300}
 .hero-pills{display:flex;gap:8px;flex-wrap:wrap}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.ai-line{display:flex;align-items:center;gap:9px;font-size:clamp(0.78rem,2vw,0.9rem);color:rgba(255,255,255,0.82);margin-bottom:16px}
+.ai-icon{width:18px;height:18px;flex-shrink:0;animation:spin 2.5s linear infinite;opacity:0.9}
 .pill{
   background:rgba(255,255,255,0.14);border:1.5px solid rgba(255,255,255,0.3);
   padding:7px 16px;border-radius:30px;font-size:clamp(0.72rem,2vw,0.85rem);
@@ -369,21 +353,18 @@ ul.f li::before{content:'▸';position:absolute;left:0;color:var(--bl2);font-siz
 </style>
 </head>
 <body>
-<div class="ai-line">
-  <svg class="ai-icon" viewBox="0 0 24 24"
-    fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M5 12h2M17 12h2M12 5v2M12 17v2
-             M7.05 7.05l1.41 1.41M15.54 15.54l1.41 1.41
-             M7.05 16.95l1.41-1.41M15.54 8.46l1.41-1.41"/>
-  </svg>
-  Votre texte ici…
-</div>
-<!-- ══════════════ HERO ══════════════ -->
 
+<!-- ══════════════ HERO ══════════════ -->
 <div class="hero">
   <div class="hero-inner">
     <h1>📚 Fiches de Révision</h1>
     <p class="sub">Management Fondamental · Semestre 2 · 2025</p>
+    <div class="ai-line">
+      <svg class="ai-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.5a1.2 1.2 0 0 1 1.2 1.2v4.9l4.24-2.45a1.2 1.2 0 1 1 1.2 2.08L14.4 10.7l4.24 2.45a1.2 1.2 0 1 1-1.2 2.08L13.2 12.78v4.92a1.2 1.2 0 0 1-2.4 0v-4.92l-4.24 2.45a1.2 1.2 0 1 1-1.2-2.08L9.6 10.7 5.36 8.23a1.2 1.2 0 1 1 1.2-2.08L10.8 8.6V3.7A1.2 1.2 0 0 1 12 2.5z"/>
+      </svg>
+      Stratégie pour obtenir d'excellentes notes en Management S2
+    </div>
     <div class="hero-pills">
       <button class="pill active" onclick="go('ch1',this)">Intro & CH1</button>
       <button class="pill" onclick="go('ch2',this)">CH2 Théories</button>
