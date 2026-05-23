@@ -6,6 +6,35 @@
 <meta name="theme-color" content="#1A4F8A">
 <title>Fiches Révision — Management S2</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.ai-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: 15px;
+}
+.ai-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  animation: spin 2.5s linear infinite;
+}
+</style>
+
+<div class="ai-line">
+  <svg class="ai-icon" viewBox="0 0 24 24"
+    fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M5 12h2M17 12h2M12 5v2M12 17v2
+             M7.05 7.05l1.41 1.41M15.54 15.54l1.41 1.41
+             M7.05 16.95l1.41-1.41M15.54 8.46l1.41-1.41"/>
+  </svg>
+  Votre texte ici…
+</div>
 <style>
 /* ═══════════════ RESET & VARIABLES ═══════════════ */
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
